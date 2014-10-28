@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>op5 Monitor login</title>
+		<link type="text/css" rel="stylesheet" href="/monitor/application/views/css/default/common.css?v=" media="all" />
+		<link type="text/css" rel="stylesheet" href="/monitor/application/views/css/default/print.css?v=" media="print" />
+		<link type="text/css" rel="stylesheet" href="/monitor/application/views/css/default/jquery-ui-custom.css?v=" />
+		<link rel="icon" type="image/icon" href="/monitor//monitor/application/views/icons/16x16/favicon.ico?v=" />
+		<script type="text/javascript" src="/monitor/application/media/js/jquery.js?v="></script>
+		 <script type="text/javascript">
+			var this_page = "/monitor/index.php/default/show_login";
+			if (window.location.pathname != this_page)
+				window.location.replace(this_page);
+		</script>
+		<script type="text/javascript">
+			//<!--
+				var _site_domain = '/monitor/';
+				var _index_page = 'index.php';
+				$(document).ready(function() {
+					$('#login_form').bind('submit', function() {
+						$('#loading').show();
+						$('#login').attr('disabled', true);
+						$('#login').attr('value', 'Please wait...');
+					});
+				});
+			//-->
+		</script>
+		<script type="text/javascript" src="/monitor/application/media/js/jquery.js?v="></script>
+<script type="text/javascript" src="/monitor/application/views/js/login.js?v="></script>	</head>
+
+	<body>
+		<div id="login-table">
+						<form id="login_form" method="post" action="/monitor/index.php/default/do_login">
+			<table border="1">
+				<tr><td colspan="2"><hr /></td></tr>
+				<tr>
+					<td><label for="username">Username</label></td>
+					<td><input name="username" class="login_field" type="text" value="" id="username" class="i160" /></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password</label></td>
+					<td><input name="password" class="login_field" type="password" value="" id="password" class="i160" /></td>
+				</tr>
+								<tr><td colspan="2"><hr /></td></tr>
+				<tr>
+					<td colspan="2" style="text-align: center">
+						<input type="hidden" name="csrf_token" value="qkJ6Urp7ABRrrspZfLxUjBMVwXebbyE1TfO4ofrUy"><input name="login" type="submit" value="Login" id="login" style="margin-left: 5px" /><br /><br />
+						<div id="loading" style="display:none;">
+							<img src="/monitor/application/media/images/loading.gif" alt="" />						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		</div>
+	</body>
+</html>
