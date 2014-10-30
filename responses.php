@@ -53,6 +53,8 @@ Template Name: Responses
 	</div>
 </div>
 
+<div>&nbsp;</div>
+
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

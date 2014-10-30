@@ -144,9 +144,6 @@ $('div.submitForm').on('click', function() {
                 processData: false,
                 data: form_data,
                 cache: false,
-                success: function (response) {
-                    console.log(response);
-                },
                 beforeSend: function () {
                     $('.custom-file-upload').hide();
                     $('.spinner').show();
