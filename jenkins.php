@@ -71,3 +71,5 @@ $latestBuild = dismount($jenkins->getBuild("Mobile%20provisioning", $results['jo
 
 <script type="text/javascript" src="./wp-content/themes/monitor/jenkins/js/job.js"></script>
 <script type="text/javascript" src="./wp-content/themes/monitor/jenkins/js/autoRefresh.js"></script>
+<script type="text/javascript" src="./wp-content/themes/monitor/jenkins/js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="./wp-content/themes/monitor/jenkins/js/init.js"></script>

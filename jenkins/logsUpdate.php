@@ -21,8 +21,8 @@ $results = dismount($job);
 
 $logs = $job->getLogs($results['job']->url, $results['job']->lastBuild->number);
 $logsArray = preg_split("/\\r\\n|\\r|\\n/", $logs);
-$logsArrayLast10lines = array_slice($logsArray, -20, 20);
+//$logsArrayLast10lines = array_slice($logsArray, -20, 20);
 
-for ($i = 0; $i <= sizeof($logsArrayLast10lines); $i++) {
-    echo $logsArrayLast10lines[$i] . '<br/>';
+for ($i = 0; $i <= sizeof($logsArray); $i++) {
+    echo $logsArray[$i] . '<br/>';
 }

@@ -9,6 +9,7 @@ function getLogs() {
             result = results;
         }
     });
+    $('div.logs').scrollTop(999999);
     return result;
 }
 function updateLogs() {

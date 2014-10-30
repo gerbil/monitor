@@ -12543,4 +12543,6 @@ button.delete {
     background: #035D6B;
     color: #c0f6f8;
     padding: 20px;
+    overflow-y: auto;
+    height: 450px;
 }
