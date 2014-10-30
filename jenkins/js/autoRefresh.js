@@ -13,7 +13,7 @@ function getLogs() {
 }
 function updateLogs() {
     $('div.logs').html(getLogs());
-    setTimeout(updateLogs, 3000);
+    setTimeout(updateLogs, 2000);
 }
 updateLogs();
 
@@ -33,7 +33,7 @@ function getJob() {
 }
 function updateJob() {
     $('div.job').html(getJob());
-    setTimeout(updateJob, 4000);
+    setTimeout(updateJob, 2000);
 }
 updateJob();
 
@@ -41,7 +41,7 @@ updateJob();
 var result = false;
 function getJobsList() {
     $.ajax({
-        url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/jobsListUpdate.php',
+        url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/buildsListUpdate.php',
         type: "GET",
         data: "",
         async: false,
@@ -53,6 +53,6 @@ function getJobsList() {
 }
 function updateJobsList() {
     $('div.jobsList').html(getJobsList());
-    setTimeout(updateJobsList, 10000);
+    setTimeout(updateJobsList, 2000);
 }
 updateJobsList();

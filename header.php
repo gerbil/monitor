@@ -76,13 +76,14 @@
 		?>  
 		<?php if( current_user_can('editor') || current_user_can('administrator') ) {  ?> 
 			<li class="accordion-group <?php if ($curPageURL == $slug.'/') { echo "active"; }; ?> color_7"> <a class="alarms" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/monitor.png"><span>Alarms</span></a></li>       
-			<li class="accordion-group <?php if ($curPageURL == $slug.'/stats/') { echo "active"; }; ?> color_4"> <a class="dashboard " href="<?php echo site_url(); ?>/stats/"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/graph.png"><span>Dashboard</span></a> </li>	
-			<li class="accordion-group <?php if ($curPageURL == $slug.'/wiki/') { echo "active"; }; ?> color_7"> <a class="alarms" href="<?php echo site_url(); ?>/wiki/"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/wiki.png"><span>Wiki</span></a></li>
-			<li class="accordion-group <?php if ($curPageURL == $slug.'/journal/') { echo "active"; }; ?> color_7"> <a class="alarms" href="<?php echo site_url(); ?>/journal/"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/journal.png"><span>Journal</span></a></li>
-			<li class="accordion-group <?php if ($curPageURL == $slug.'/lb/') { echo "active"; }; ?> color_7"> <a class="lb" href="<?php echo site_url(); ?>/lb/"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/lb.png"><span>Load balancer</span></a></li>
-			<li class="accordion-group <?php if ($curPageURL == $slug.'/responses/') { echo "active"; }; ?> color_7"> <a class="responses" href="<?php echo site_url(); ?>/responses/"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/retry.png"><span>Responses</span></a></li>
-		<?php } else { ?>			
-			<li class="accordion-group <?php if ($curPageURL == $slug.'/responses/') { echo "active"; }; ?> color_7"> <a class="responses" href="<?php echo site_url(); ?>/responses/"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/retry.png"><span>Responses</span></a></li>
+			<li class="accordion-group <?php if ($curPageURL == $slug.'/stats/') { echo "active"; }; ?> color_4"> <a class="dashboard " href="<?php echo site_url(); ?>/stats"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/graph.png"><span>Dashboard</span></a> </li>
+			<li class="accordion-group <?php if ($curPageURL == $slug.'/wiki') { echo "active"; }; ?> color_7"> <a class="alarms" href="<?php echo site_url(); ?>/wiki"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/wiki.png"><span>Wiki</span></a></li>
+			<li class="accordion-group <?php if ($curPageURL == $slug.'/journal') { echo "active"; }; ?> color_7"> <a class="alarms" href="<?php echo site_url(); ?>/journal"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/journal.png"><span>Journal</span></a></li>
+			<li class="accordion-group <?php if ($curPageURL == $slug.'/lb') { echo "active"; }; ?> color_7"> <a class="lb" href="<?php echo site_url(); ?>/lb"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/lb.png"><span>Load balancer</span></a></li>
+			<li class="accordion-group <?php if ($curPageURL == $slug.'/responses') { echo "active"; }; ?> color_7"> <a class="responses" href="<?php echo site_url(); ?>/responses"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/retry.png"><span>Responses</span></a></li>
+            <li class="accordion-group <?php if ($curPageURL == $slug.'/jenkins') { echo "active"; }; ?> color_7"> <a class="jenkins" href="<?php echo site_url(); ?>/jenkins"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/jenkins.png"><span>Jenkins</span></a></li>
+        <?php } else { ?>
+			<li class="accordion-group <?php if ($curPageURL == $slug.'/responses') { echo "active"; }; ?> color_7"> <a class="responses" href="<?php echo site_url(); ?>/responses"><img src="<?php bloginfo('template_url'); ?>/img/menu_icons/retry.png"><span>Responses</span></a></li>
 		<?php }; ?>
       </ul>
     </div>

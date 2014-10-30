@@ -13,7 +13,6 @@ $jenkins = new Jenkins('prov:providentprovident@rig-provident.tele2.net:8080');
 
 $job = $jenkins->getJob("Mobile%20provisioning");
 
-
 function dismount($object)
 {
     $reflectionClass = new ReflectionClass(get_class($object));
@@ -31,11 +30,11 @@ $latestBuild = dismount($jenkins->getBuild("Mobile%20provisioning", $results['jo
 ?>
 
 
-    <div id="main_container">
+    <div id="main_container" class="jenkins">
         <div class="row-fluid">
             <div class="span14 ">
-                <div class="box color_11 title_big height_big" style="height:730px;padding:5px;">
-
+                <div class="box color_11 title_big height_big production">
+                    <!-- Main title -->
                     <div class="title">
                         <div class="row-fluid">
                             <div class="span12">
@@ -44,23 +43,21 @@ $latestBuild = dismount($jenkins->getBuild("Mobile%20provisioning", $results['jo
                             </div>
                         </div>
                     </div>
-
+                    <!-- Job name, status and latest build -->
                     <div class="span7" style="float:right;">
                         <div class="row-fluid fluid">
                             <div class="span14">
                                 <div class="box color_26 height_medium title_big job"></div>
                             </div>
-
+                            <!-- Latest build logs -->
                             <div class="row-fluid fluid">
                                 <div class="span14">
-                                    <div class="box height_bigtitle_big logs" style="background: #035D6B; color: #379EAE; padding: 20px;"></div>
+                                    <div class="box height_bigtitle_big logs" ></div>
                                 </div>
                             </div>
-
+                            <!-- Latest builds -->
                             <div class="jobsList"></div>
-
                         </div>
-
                     </div>
                 </div>
             </div>

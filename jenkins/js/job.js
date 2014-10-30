@@ -1,11 +1,22 @@
-$('div#jenkinsMobileBuildControl a').live('click', function () {
+$('div#jenkinsMobileBuildControl a.start').live('click', function () {
     $.ajax({
-            url: './wp-content/themes/monitor/jenkins/startBuild.php',
+            url: './wp-content/themes/monitor/jenkins/buildControl.php',
             type: 'POST',
-            contentType: false,
-            processData: false,
-            data: "",
-            cache: false,
+            data: "command=start",
+            success: function (data) {
+            },
+            error: function (data) {
+            }
+        }
+    )
+    return false
+});
+
+$('div.jobsList a.stop').live('click', function () {
+    $.ajax({
+            url: './wp-content/themes/monitor/jenkins/buildControl.php',
+            type: 'POST',
+            data: "command=stop",
             success: function (data) {
             },
             error: function (data) {

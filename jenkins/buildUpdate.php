@@ -33,9 +33,7 @@ $results = dismount($job);
     <div class="btn-toolbar pull-right ">
         <div class="btn-group">
             <div id="jenkinsMobileBuildControl">
-                <a href="#" class="btn start" title="Start a new build" style="padding: 56px !important;"><img src="wp-content/themes/monitor/img/lbadd.png"></a>
-                <a href="#" class="btn stop" title="Stop the build" style="padding: 56px !important; display: none;"><img src="wp-content/themes/monitor/img/lbremove.png"></a>
-                <a href="#" class="btn inProgress" title="Build is in progress" style="padding: 56px !important; display: none;"><img src="wp-content/themes/monitor/img/lbhz.png"></a>
+                <a href="" class="btn start" title="Start a new build" style="padding: 56px !important;"><img src="wp-content/themes/monitor/img/lbadd.png"></a>
             </div>
         </div>
     </div>

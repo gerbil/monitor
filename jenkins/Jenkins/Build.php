@@ -1,27 +1,27 @@
 <?php
- 
-class Jenkins_Build 
+
+class Jenkins_Build
 {
   /**
    * @var string
    */
-  const FAILURE = 'FAILURE';  
-  
+  const FAILURE = 'FAILURE';
+
   /**
    * @var string
    */
   const SUCCESS = 'SUCCESS';
-  
+
   /**
    * @var string
    */
   const RUNNING = 'RUNNING';
-  
+
   /**
    * @var string
    */
-  const WAITING = 'WAITING';  
-  
+  const WAITING = 'WAITING';
+
   /**
    * @var string
    */
@@ -31,12 +31,12 @@ class Jenkins_Build
    * @var string
    */
   const ABORTED = 'ABORTED';
-  
+
   /**
-   * @var stdClass 
+   * @var stdClass
    */
   private $build;
-  
+
   /**
    * @var Jenkins
    */
@@ -52,27 +52,27 @@ class Jenkins_Build
     $this->build = $build;
     $this->setJenkins($jenkins);
   }
-  
+
   /**
    * @return array
    */
   public function getInputParameters()
   {
     $parameters = array();
-    
+
     if (!property_exists($this->build->actions[0], 'parameters'))
     {
       return $parameters;
     }
-    
+
     foreach ($this->build->actions[0]->parameters as $parameter)
     {
       $parameters[$parameter->name] = $parameter->value;
     }
-    
+
     return $parameters;
   }
-  
+
   /**
    * @return int
    */
@@ -91,7 +91,7 @@ class Jenkins_Build
     //division par 1000 => pas de millisecondes
     return $this->build->duration / 1000;
   }
-  
+
   /**
    * @return int
    */
@@ -99,7 +99,7 @@ class Jenkins_Build
   {
     return $this->build->number;
   }
-  
+
   /**
    * @return null|int
    */
@@ -110,10 +110,10 @@ class Jenkins_Build
     {
       $progress = $executor->getProgress();
     }
-    
+
     return $progress;
   }
-  
+
   /**
    * @return float|null
    */
@@ -134,14 +134,14 @@ class Jenkins_Build
     {
       $duration = ceil((time() - $this->getTimestamp()) / ($progress/100));
     }
-    
+
     return $duration;
   }
-  
-  
+
+
   /**
    * Returns remaining execution time (seconds)
-   * 
+   *
    * @return int|null
    */
   public function getRemainingExecutionTime()
@@ -149,16 +149,16 @@ class Jenkins_Build
     $remaining = null;
     if (null !== ($estimatedDuration = $this->getEstimatedDuration()))
     {
-      //be carefull because time from JK server could be different 
+      //be carefull because time from JK server could be different
       //of time from Jenkins server
       //but i didn't find a timestamp given by Jenkins api
-      
+
       $remaining = $estimatedDuration - (time() - $this->getTimestamp()) ;
     }
-    
+
     return $remaining;
   }
-  
+
   /**
    * @return null|string
    */
@@ -169,16 +169,16 @@ class Jenkins_Build
     {
       case 'FAILURE':
         $result = Jenkins_Build::FAILURE;
-        break;      
+        break;
       case 'SUCCESS':
         $result = Jenkins_Build::SUCCESS;
-        break;      
+        break;
       case 'UNSTABLE':
         $result = Jenkins_Build::UNSTABLE;
-        break;       
+        break;
       case 'ABORTED':
         $result = Jenkins_Build::ABORTED;
-        break; 
+        break;
       case 'WAITING':
         $result = Jenkins_Build::WAITING;
         break;
@@ -186,10 +186,10 @@ class Jenkins_Build
         $result = Jenkins_Build::RUNNING;
         break;
     }
-    
+
     return $result;
   }
-  
+
   /**
    * @return string
    */
@@ -197,7 +197,7 @@ class Jenkins_Build
   {
     return $this->build->url;
   }
-  
+
   /**
    * @return Jenkins_Executor|null
    */
@@ -207,21 +207,21 @@ class Jenkins_Build
     {
       return null;
     }
-    
+
     $runExecutor = null;
     foreach ($this->getJenkins()->getExecutors() as $executor)
     {
       /** @var Jenkins_Executor $executor */
-      
+
       if ($this->getUrl() === $executor->getBuildUrl())
       {
         $runExecutor = $executor;
       }
     }
-    
+
     return $runExecutor;
   }
-  
+
   /**
    * @return bool
    */
@@ -248,6 +248,29 @@ class Jenkins_Build
     $this->jenkins = $jenkins;
 
     return $this;
+  }
+
+  /**
+   * @param string $jobname
+   * @param string $buildNumber
+   * @return bool
+   */
+  public function stopBuild($jobname, $buildNumber)
+  {
+      $url  = sprintf('prov:providentprovident@rig-provident.tele2.net:8080/job/%s/%s/stop', $jobname, $buildNumber);
+      $curl = curl_init($url);
+      curl_setopt($curl, CURLOPT_POST, 1);
+      curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+      curl_exec($curl);
+
+      $errorMessage = sprintf('Error during getting information for build %s#%d on %s', jobname, $buildNumber);
+
+      if (curl_errno($curl))
+      {
+          throw new RuntimeException($errorMessage);
+      }
+
+      return true;
   }
 
   public function getBuiltOn()

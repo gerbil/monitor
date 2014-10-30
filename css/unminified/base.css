@@ -12534,3 +12534,13 @@ button.delete {
 }
 
 /* Jenkins */
+.jenkins .production {
+    height:740px;
+    padding:5px;
+}
+
+.jenkins .logs {
+    background: #035D6B;
+    color: #c0f6f8;
+    padding: 20px;
+}
