@@ -25,7 +25,7 @@ for ($i = 0; $i <= 5; $i++) {
     if ($status == 'inProgress') {
         echo '<div class="span2">
                  <div class="box ' . $color . ' height_small title_big" style="width: 150px;">
-                    <div class="btn-toolbar pull-right" ><div class="btn-group"><a href="" class="btn stop" title="Stop this build" style="padding: 4px !important; background: #6a6a6a;"><img src="wp-content/themes/monitor/img/lbremove.png"></a></div></div>
+                    <div class="btn-toolbar pull-right" ><div class="btn-group"><a href="" class="btn stop" title="Stop this build" style="padding: 4px !important; background: transparent;"><img src="wp-content/themes/monitor/img/lbremove.png"></a></div></div>
                     <div style="width: '.$currentBuildProgress. '%; height: 100%; background: #8fcf01;">
                         <div class="title">
                             <h5 style="margin: 5px 0 0 30px"><a class="center" href="' . $currentBuildUrl . '"> ' . $currentBuildNumber . '</a></h5>
