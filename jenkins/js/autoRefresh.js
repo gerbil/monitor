@@ -54,6 +54,6 @@ function getJobsList() {
 }
 function updateJobsList() {
     $('div.jobsList').html(getJobsList());
-    //setTimeout(updateJobsList, 2000);
+    setTimeout(updateJobsList, 2000);
 }
 updateJobsList();
