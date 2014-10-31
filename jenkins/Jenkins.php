@@ -184,6 +184,7 @@ class Jenkins
    */
   public function getJob($jobName)
   {
+    $jobName = str_replace(' ', '%20', $jobName);
     $url = sprintf('%s/job/%s/api/json', $this->baseUrl, $jobName);
     $curl = curl_init($url);
 
@@ -310,20 +311,21 @@ class Jenkins
 
 
   /**
-   * @param        $job
+   * @param        $jobName
    * @param        $buildId
    * @param string $tree
    *
    * @return Jenkins_Build
    * @throws RuntimeException
    */
-  public function getBuild($job, $buildId, $tree = 'actions[parameters,parameters[name,value]],result,duration,timestamp,number,url,estimatedDuration,builtOn')
+  public function getBuild($jobName, $buildId, $tree = 'actions[parameters,parameters[name,value]],result,duration,timestamp,number,url,estimatedDuration,builtOn')
   {
     if ($tree !== null)
     {
       $tree = sprintf('?tree=%s', $tree);
     }
-    $url = sprintf('%s/job/%s/%d/api/json%s', $this->baseUrl, $job, $buildId, $tree);
+    $jobName = str_replace(' ', '%20', $jobName);
+    $url = sprintf('%s/job/%s/%d/api/json%s', $this->baseUrl, $jobName, $buildId, $tree);
     $curl = curl_init($url);
 
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -331,7 +333,7 @@ class Jenkins
 
     if (curl_errno($curl))
     {
-      throw new RuntimeException(sprintf('Error during getting information for build %s#%d on %s', $job, $buildId, $this->baseUrl));
+      throw new RuntimeException(sprintf('Error during getting information for build %s#%d on %s', $jobName, $buildId, $this->baseUrl));
     }
     $infos = json_decode($ret);
 

@@ -9,7 +9,7 @@ function getLogs() {
             result = results;
         }
     });
-    $('div.logs').scrollTop(999999);
+    //$('div.logs').scrollTop(999999);
     return result;
 }
 function updateLogs() {
@@ -54,6 +54,6 @@ function getJobsList() {
 }
 function updateJobsList() {
     $('div.jobsList').html(getJobsList());
-    setTimeout(updateJobsList, 2000);
+    //setTimeout(updateJobsList, 2000);
 }
 updateJobsList();

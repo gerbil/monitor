@@ -6,30 +6,6 @@ Template Name: Jenkins
 
 <?php get_header(); ?>
 
-<?php
-require_once('jenkins/Autoload.php');
-Jenkins_Autoloader::register();
-$jenkins = new Jenkins('prov:providentprovident@rig-provident.tele2.net:8080');
-
-$job = $jenkins->getJob("Mobile%20provisioning");
-
-function dismount($object)
-{
-    $reflectionClass = new ReflectionClass(get_class($object));
-    $array = array();
-    foreach ($reflectionClass->getProperties() as $property) {
-        $property->setAccessible(true);
-        $array[$property->getName()] = $property->getValue($object);
-        $property->setAccessible(false);
-    }
-    return $array;
-}
-
-$results = dismount($job);
-$latestBuild = dismount($jenkins->getBuild("Mobile%20provisioning", $results['job']->lastBuild->number));
-?>
-
-
     <div id="main_container" class="jenkins">
         <div class="row-fluid">
             <div class="span14 ">
