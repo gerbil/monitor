@@ -12546,3 +12546,7 @@ button.delete {
     overflow-y: auto;
     height: 450px;
 }
+
+.jenkins .span2 {
+    padding-left: 10px;
+}
