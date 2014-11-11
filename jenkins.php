@@ -26,19 +26,19 @@ Template Name: Jenkins
                             </div>
                         </div>
 
-                        <div class="span6 MobileLV">
+                        <div class="span6 MobileLatvia">
                             <div class="box color12 height_small title_big">
                                 <h5><a class="link" href="#">Latvia</a></h5>
                             </div>
                         </div>
 
-                        <div class="span6 MobileCRO">
+                        <div class="span6 MobileCroatia">
                             <div class="box color12 height_small title_big">
                                 <h5><a class="link" href="#">Croatia</a></h5>
                             </div>
                         </div>
 
-                        <div class="span6 MobileNL">
+                        <div class="span6 MobileNetherlands">
                             <div class="box color12 height_small title_big">
                                 <h5><a class="link" href="#">Netherlands</a></h5>
                             </div>
@@ -51,6 +51,7 @@ Template Name: Jenkins
 
                 <!-- Job name, status and latest build for Mobile provisioning ALL -->
                 <div class="span7" style="float:right;" id="MobileAll">
+                    <div class="info"></div>
                     <div class="row-fluid fluid">
                         <div class="span14">
                             <div class="box color_26 height_medium title_big job"></div>
@@ -67,7 +68,44 @@ Template Name: Jenkins
                 </div>
 
                 <!-- Job name, status and latest build for Mobile provisioning LV -->
-                <div class="span7" style="float:right;" id="MobileLV">
+                <div class="span7" style="float:right;" id="MobileLatvia">
+                    <div class="info"></div>
+                    <div class="row-fluid fluid">
+                        <div class="span14">
+                            <div class="box color_26 height_medium title_big job"></div>
+                        </div>
+                        <!-- Latest build logs -->
+                        <div class="row-fluid fluid">
+                            <div class="span14">
+                                <div class="box height_bigtitle_big logs"></div>
+                            </div>
+                        </div>
+                        <!-- Latest builds -->
+                        <div class="jobsList"></div>
+                    </div>
+                </div>
+
+                <!-- Job name, status and latest build for Mobile provisioning CRO -->
+                <div class="span7" style="float:right;" id="MobileCroatia">
+                    <div class="info"></div>
+                    <div class="row-fluid fluid">
+                        <div class="span14">
+                            <div class="box color_26 height_medium title_big job"></div>
+                        </div>
+                        <!-- Latest build logs -->
+                        <div class="row-fluid fluid">
+                            <div class="span14">
+                                <div class="box height_bigtitle_big logs"></div>
+                            </div>
+                        </div>
+                        <!-- Latest builds -->
+                        <div class="jobsList"></div>
+                    </div>
+                </div>
+
+                <!-- Job name, status and latest build for Mobile provisioning NL -->
+                <div class="span7" style="float:right;" id="MobileNetherlands">
+                    <div class="info"></div>
                     <div class="row-fluid fluid">
                         <div class="span14">
                             <div class="box color_26 height_medium title_big job"></div>

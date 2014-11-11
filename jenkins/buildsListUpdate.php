@@ -6,7 +6,13 @@ $jenkins = new Jenkins('prov:providentprovident@rig-provident.tele2.net:8080');
 $jobName = (isset($_GET['jobName']) ? $_GET['jobName'] : "");
 $job = $jenkins->getJob($jobName);
 
-for ($i = 0; $i <= 5; $i++) {
+if (sizeof($job->getBuilds()) < 5 ) {
+    $size = sizeof($job->getBuilds())-1;
+} else {
+    $size = 5;
+}
+
+for ($i = 0; $i <= $size; $i++) {
     $jobBuilds = $job->getBuilds();
     $currentBuildNumber = $jobBuilds[$i]->number;
     $currentBuild = $jenkins->getBuild($job->getName(), $currentBuildNumber);
@@ -27,7 +33,7 @@ for ($i = 0; $i <= 5; $i++) {
     if ($status == 'inProgress') {
         echo '<div class="span2">
                  <div class="box ' . $color . ' height_small title_big">
-                    <div class="btn-toolbar pull-right" ><div class="btn-group"><a href="" class="btn stop" title="Stop this build" style="padding: 4px !important; background: transparent;"><img src="wp-content/themes/monitor/img/lbremove.png"></a></div></div>
+                    <div class="btn-toolbar pull-right" ><div class="btn-group"><a href="" class="btn stop" title="Stop this build" name="'.$job->getName().'" style="padding: 4px !important; background: transparent;"><img src="wp-content/themes/monitor/img/lbremove.png"></a></div></div>
                     <div style="width: '.$currentBuildProgress. '%; height: 100%; background: #8fcf01;">
                         <div class="title">
                             <h5 style="padding: 5px 0 5px 20px"><a class="center" href="' . $currentBuildUrl . '"> ' . $currentBuildNumber . '</a></h5>

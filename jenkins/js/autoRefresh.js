@@ -1,11 +1,19 @@
 tests = {};
 tests[1] = {
-    jobName: 'Mobile%20provisioning',
+    jobName: 'Mobile provisioning',
     divId: 'MobileAll'
 };
 tests[2] = {
-    jobName: 'Mobile%20provisioning%20LV',
-    divId: 'MobileLV'
+    jobName: 'Mobile provisioning LV',
+    divId: 'MobileLatvia'
+};
+tests[3] = {
+    jobName: 'Mobile provisioning CRO',
+    divId: 'MobileCroatia'
+};
+tests[4] = {
+    jobName: 'Mobile provisioning NL',
+    divId: 'MobileNetherlands'
 };
 
 for (var test in tests) {
@@ -53,7 +61,7 @@ for (var test in tests) {
             });
         }
 
-        setInterval(getJobsList, 10000);
+        setInterval(getJobsList, 5000);
         getJobsList();
 
     };

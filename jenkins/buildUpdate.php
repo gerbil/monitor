@@ -19,7 +19,7 @@ $job = $jenkins->getJob($jobName);
     <div class="btn-toolbar pull-right ">
         <div class="btn-group">
             <div id="jenkinsMobileBuildControl">
-                <a href="" class="btn start" title="Start a new build" style="padding: 56px !important;"><img src="wp-content/themes/monitor/img/lbadd.png"></a>
+               <?php echo '<a href="" class="btn start" name="' . $job->getName() . '" title="Start a new build" style="padding: 56px !important;"><img src="wp-content/themes/monitor/img/lbadd.png"></a>'; ?>
             </div>
         </div>
     </div>
