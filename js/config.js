@@ -5,10 +5,10 @@ updateInterval = 90000;
 alarmUpdateInterval = 90000;
 
 /************************************************************************************ Dates for clock & releases */
-release = "2014-11-11T00:00:00+03:00"; //Specially for firefox
+release = "2014-12-02T00:00:00+03:00"; //Specially for firefox
 releaseDate = new Date(release); //Release date full
 
-release = "2014-11-11 00:00:00"; //Human readable again for pages
+release = "2014-12-02 00:00:00"; //Human readable again for pages
 /************************************************************************************ Configuration for db queries */
 interval_test = 240; // 120 mins = +2 HRS GMTs
 interval_cluster = 121; // 1 min really

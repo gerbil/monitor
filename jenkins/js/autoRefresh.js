@@ -24,7 +24,6 @@ for (var test in tests) {
                 url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/logsUpdate.php',
                 type: "GET",
                 data: {"jobName": jobName},
-                /*async: false,*/
                 success: function (results) {
                     $('div#' + divId + ' div.logs').html(results);
                 }
@@ -39,7 +38,6 @@ for (var test in tests) {
                 url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/buildUpdate.php',
                 type: "GET",
                 data: {"jobName": jobName},
-                /*async: false,*/
                 success: function (results) {
                     $('div#' + divId + ' div.job').html(results);
                 }
@@ -54,7 +52,6 @@ for (var test in tests) {
                 url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/buildsListUpdate.php',
                 type: "GET",
                 data: {"jobName": jobName},
-                /*async: false,*/
                 success: function (results) {
                     $('div#' + divId + ' div.jobsList').html(results);
                 }
