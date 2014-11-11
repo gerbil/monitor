@@ -2,7 +2,9 @@
 require_once('Autoload.php');
 Jenkins_Autoloader::register();
 $jenkins = new Jenkins('prov:providentprovident@rig-provident.tele2.net:8080');
-$job = $jenkins->getJob("Mobile%20provisioning");
+
+$jobName = (isset($_GET['jobName']) ? $_GET['jobName'] : "");
+$job = $jenkins->getJob($jobName);
 
 for ($i = 0; $i <= 5; $i++) {
     $jobBuilds = $job->getBuilds();
@@ -37,7 +39,7 @@ for ($i = 0; $i <= 5; $i++) {
         echo '<div class="span2">
                 <div class="box ' . $color . ' height_small title_big">
                    <div class="title">
-                     <h5 style="padding: 5px 0 5px 20px"><a class="center" href="' . $currentBuildUrl . '"> ' . $currentBuildNumber . '</a></h5>
+                     <h5 style="padding: 7px 0 5px 35px"><a class="center" href="' . $currentBuildUrl . '"> ' . $currentBuildNumber . '</a></h5>
                    </div>
                 </div>
              </div> ';

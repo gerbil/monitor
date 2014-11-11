@@ -224,11 +224,11 @@ $(function() {
         if ($('table.alarms tr').hasClass('ALARM')) {
             changer();
             $('table.alarms tr.ALARM').css('background-color', 'red');
-			/*
+
 			$('.alert').remove();
             $('table.alarms tr.ALARM').each(function() {
                 $('#main_container').prepend('<div class="alert alert-error alert-large"><a class="close" data-dismiss="alert">×</a><strong>Alarm!</strong> ' + $(this).text() + '</div>');
-            });*/
+            });
         } else {
             $('.alert').remove();
             clearTimeout(changerTimer); // stop title changer

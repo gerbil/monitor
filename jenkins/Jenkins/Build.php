@@ -257,6 +257,8 @@ class Jenkins_Build
    */
   public function stopBuild($jobname, $buildNumber)
   {
+      $jobname = str_replace(' ', '%20', $jobname);
+
       $url  = sprintf('prov:providentprovident@rig-provident.tele2.net:8080/job/%s/%s/stop', $jobname, $buildNumber);
       $curl = curl_init($url);
       curl_setopt($curl, CURLOPT_POST, 1);

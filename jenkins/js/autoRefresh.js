@@ -1,59 +1,66 @@
-var result = false;
-function getLogs() {
-    $.ajax({
-        url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/logsUpdate.php',
-        type: "GET",
-        data: "",
-        async: false,
-        success: function(results) {
-            result = results;
+tests = {};
+tests[1] = {
+    jobName: 'Mobile%20provisioning',
+    divId: 'MobileAll'
+};
+tests[2] = {
+    jobName: 'Mobile%20provisioning%20LV',
+    divId: 'MobileLV'
+};
+
+for (var test in tests) {
+
+    function refresh(jobName,divId) {
+        function getLogs() {
+            $.ajax({
+                url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/logsUpdate.php',
+                type: "GET",
+                data: {"jobName": jobName},
+                /*async: false,*/
+                success: function (results) {
+                    $('div#' + divId + ' div.logs').html(results);
+                }
+            });
         }
-    });
-    //$('div.logs').scrollTop(999999);
-    return result;
-}
-function updateLogs() {
-    $('div.logs').html(getLogs());
-    setTimeout(updateLogs, 2000);
-}
-updateLogs();
 
+        setInterval(getLogs, 10000);
+        getLogs();
 
-var result = false;
-function getJob() {
-    $.ajax({
-        url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/buildUpdate.php',
-        type: "GET",
-        data: "",
-        async: false,
-        success: function(results) {
-            result = results;
+        function getJob() {
+            $.ajax({
+                url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/buildUpdate.php',
+                type: "GET",
+                data: {"jobName": jobName},
+                /*async: false,*/
+                success: function (results) {
+                    $('div#' + divId + ' div.job').html(results);
+                }
+            });
         }
-    });
-    return result;
-}
-function updateJob() {
-    $('div.job').html(getJob());
-    setTimeout(updateJob, 2000);
-}
-updateJob();
 
+        setInterval(getJob, 5000);
+        getJob();
 
-var result = false;
-function getJobsList() {
-    $.ajax({
-        url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/buildsListUpdate.php',
-        type: "GET",
-        data: "",
-        async: false,
-        success: function(results) {
-            result = results;
+        function getJobsList() {
+            $.ajax({
+                url: 'http://rig-provident.tele2.net/monitor/wp-content/themes/monitor/jenkins/buildsListUpdate.php',
+                type: "GET",
+                data: {"jobName": jobName},
+                /*async: false,*/
+                success: function (results) {
+                    $('div#' + divId + ' div.jobsList').html(results);
+                }
+            });
         }
-    });
-    return result;
+
+        setInterval(getJobsList, 10000);
+        getJobsList();
+
+    };
+
+    var jobName = tests[test]['jobName'];
+    var divId = tests[test]['divId'];
+
+    refresh(jobName, divId);
+
 }
-function updateJobsList() {
-    $('div.jobsList').html(getJobsList());
-    setTimeout(updateJobsList, 2000);
-}
-updateJobsList();
