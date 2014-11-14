@@ -1,7 +1,7 @@
 tests = {};
 tests[1] = {
     jobName: 'Mobile provisioning',
-    divId: 'MobileAll'
+    divId: 'MobileALL'
 };
 tests[2] = {
     jobName: 'Mobile provisioning LV',

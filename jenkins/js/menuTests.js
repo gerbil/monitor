@@ -3,4 +3,5 @@ $('.menuTests a.link').live('click', function () {
     $(this).addClass('active');
     $('.span7').hide();
     $('#Mobile'+this.text).show();
+    //console.log('#Mobile'+this.text);
 });

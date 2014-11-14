@@ -4,13 +4,12 @@ Theme Name: Monitor
 */
 ?>
 
-
 <?php get_header(); ?>
 
 <!-- Js plugins Init -->
 <script src="<?php bloginfo('template_url'); ?>/js/index.js"></script>
 
-<?php 
+<?php
 
 $avk6b1Status = 1;
 $hgd0b1Status = 1;

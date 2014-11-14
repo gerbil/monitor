@@ -50,7 +50,7 @@ Template Name: Jenkins
 
 
                 <!-- Job name, status and latest build for Mobile provisioning ALL -->
-                <div class="span7" style="float:right;" id="MobileAll">
+                <div class="span7" style="float:right;" id="MobileALL">
                     <div class="info"></div>
                     <div class="row-fluid fluid">
                         <div class="span14">

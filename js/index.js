@@ -192,7 +192,7 @@ $(function () {
             highlight: {
                 opacity: 0.3
             },
-            fillColor: "#fff",
+            fillColor: "#fff"
         },
         series: {
             bars: {show: true, barWidth: 0.6},
@@ -207,12 +207,12 @@ $(function () {
         bars: {
             lineWidth: 0,
             fill: true,
-            fillColor: "rgba(0,0,0,0.2)",
+            fillColor: "rgba(0,0,0,0.2)"
         },
         lines: {show: false, fill: true},
         points: {show: false},
         series: {
-            bars: {show: true, barWidth: 0.6},
+            bars: {show: true, barWidth: 0.6}
         },
         grid: {show: false, hoverable: true, clickable: false, autoHighlight: true, borderWidth: 0},
         yaxis: {min: 0, max: 15}

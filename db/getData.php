@@ -1,4 +1,5 @@
 <?php
+
 $meminstance = new Memcache();
 $meminstance->pconnect('localhost', 11211);
 
@@ -32,8 +33,13 @@ switch ($server) {
         break;
 	case "kstb1":
         $user = "provkst01";
-		$password = "provdbpass42";
-		$url = "obelix.corp.tele2.com/PROVDB";
+		$password = "oJFaCddRjSYqa3GD";
+		$url = "10.156.150.160/PROVDB";
+        break;
+    case "hgdb1":
+        $user = "provhgd01";
+        $password = "ePYg1xDc5AjCShmR";
+        $url = "10.156.150.160/PROVDB";
         break;
 	case "test":
         $user = "provtest";
@@ -65,6 +71,7 @@ switch ($action) {
         $sql = "select count(a.processid) as result from aeprocess a, aeplan b where a.startdate > (SYSDATE - 1) and a.processstate=4 and a.planid=b.planid and b.processname=('DS_Mobile_Source')";		
         break;
 }
+
 
 $conn = oci_connect($user,$password,$url);
 

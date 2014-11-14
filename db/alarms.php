@@ -132,7 +132,7 @@ class alarmResults {
 	public function getTable() {	
 
 		$alarms = $this->getAlarms();
-
+        $table = '';
 		$table .= '<table id="'.$this->server.'" class="table table-striped table-bordered table-condensed table-hover alarms"><thead><tr><th>Name</th><th class="center">Active</th><th class="center">Status</th><th>Limit</th></tr></thead>';						
 			foreach($alarms as $alarm=>$value) {	
 				
