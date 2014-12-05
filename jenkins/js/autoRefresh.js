@@ -1,3 +1,5 @@
+// TODO: Если джоб бежит - делать пометку running и крутить скролл вниз пока running, потом снимать running и скролл не трогать
+
 tests = {};
 tests[1] = {
     jobName: 'Mobile provisioning',

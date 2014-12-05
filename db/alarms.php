@@ -234,7 +234,7 @@ class alarmResults {
 					  <div class="control-group">
 						<label class="control-label" for="sendto">Send to</label>
 						<div class="controls">
-						  <textarea rows="1" class="field span3" name="sendto">'.$alarm["SENDTO"].'</textarea>
+						  <textarea rows="1" class="field span4" name="sendto">'.$alarm["SENDTO"].'</textarea>
 						</div>
 					  </div>
 					  <div class="control-group">

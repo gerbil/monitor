@@ -284,6 +284,7 @@
     #responses .results .response {
         margin-top: 40px;
         min-height: 150px;
+        overflow-y: auto;
     }
 
         #responses .results .response ul {
