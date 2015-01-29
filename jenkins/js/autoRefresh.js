@@ -6,14 +6,18 @@ tests[1] = {
     divId: 'MobileALL'
 };
 tests[2] = {
+    jobName: 'Mobile provisioning SWE',
+    divId: 'MobileSweden'
+};
+tests[3] = {
     jobName: 'Mobile provisioning LV',
     divId: 'MobileLatvia'
 };
-tests[3] = {
+tests[4] = {
     jobName: 'Mobile provisioning CRO',
     divId: 'MobileCroatia'
 };
-tests[4] = {
+tests[5] = {
     jobName: 'Mobile provisioning NL',
     divId: 'MobileNetherlands'
 };

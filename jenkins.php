@@ -26,6 +26,12 @@ Template Name: Jenkins
                             </div>
                         </div>
 
+                        <div class="span6 MobileSweden">
+                            <div class="box color12 height_small title_big">
+                                <h5><a class="link" href="#">Sweden</a></h5>
+                            </div>
+                        </div>
+
                         <div class="span6 MobileLatvia">
                             <div class="box color12 height_small title_big">
                                 <h5><a class="link" href="#">Latvia</a></h5>
@@ -51,6 +57,24 @@ Template Name: Jenkins
 
                 <!-- Job name, status and latest build for Mobile provisioning ALL -->
                 <div class="span7" style="float:right;" id="MobileALL">
+                    <div class="info"></div>
+                    <div class="row-fluid fluid">
+                        <div class="span14">
+                            <div class="box color_26 height_medium title_big job"></div>
+                        </div>
+                        <!-- Latest build logs -->
+                        <div class="row-fluid fluid">
+                            <div class="span14">
+                                <div class="box height_bigtitle_big logs"></div>
+                            </div>
+                        </div>
+                        <!-- Latest builds -->
+                        <div class="jobsList"></div>
+                    </div>
+                </div>
+
+                <!-- Job name, status and latest build for Mobile provisioning SWE -->
+                <div class="span7" style="float:right;" id="MobileSweden">
                     <div class="info"></div>
                     <div class="row-fluid fluid">
                         <div class="span14">

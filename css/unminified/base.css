@@ -13439,18 +13439,23 @@ button.delete {
     padding: 0px;
 }
 
-.jenkins .production .menuTests .MobileLatvia {
+.jenkins .production .menuTests .MobileSweden {
     margin-top: 350px;
     padding-left: 0px;
 }
 
-.jenkins .production .menuTests .MobileCroatia {
+.jenkins .production .menuTests .MobileLatvia {
     margin-top: 400px;
     padding-left: 0px;
 }
 
-.jenkins .production .menuTests .MobileNetherlands {
+.jenkins .production .menuTests .MobileCroatia {
     margin-top: 450px;
+    padding-left: 0px;
+}
+
+.jenkins .production .menuTests .MobileNetherlands {
+    margin-top: 500px;
     padding-left: 0px;
 }
 
@@ -13459,7 +13464,7 @@ button.delete {
 }
 
 /* Jenkins */
-#MobileLatvia, #MobileNetherlands, #MobileCroatia {
+#MobileSweden, #MobileLatvia, #MobileNetherlands, #MobileCroatia {
     display: none;
 }
 
