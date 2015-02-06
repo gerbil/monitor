@@ -75,7 +75,7 @@ Template Name: Lb
 				
 				 <div class="row-fluid fluid">
 					<div class="span6">
-					  <div class=" box color_22 height_medium title_big">
+					  <div class=" box color_23_1 height_medium title_big">
 						<div class="title row-fluid">
 							<h5 class="pull-left"><span>hgdf1</span></h5>
 							<h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
@@ -87,7 +87,7 @@ Template Name: Lb
 					  </div>
 					</div>
 					<div class="span6">
-					  <div class=" box color_23_1 height_medium title_big ">
+					  <div class=" box color_22 height_medium title_big ">
 						<div class="title row-fluid">
 							<h5 class="pull-left"><span>kstf1</span></h5>
 							<h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
