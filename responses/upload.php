@@ -41,6 +41,8 @@ if (isset($_FILES['file'])) {
         $servers['hgdb2']['password'] = 'provdbpass042';
         $servers['hgdb2']['url'] = 'dbp-1.tele2.net/provvos7';
 
+        /* */
+
         foreach ($servers as $key => $value) {
 
             $conn = oci_new_connect($servers[$key]['user'], $servers[$key]['password'], $servers[$key]['url']);
