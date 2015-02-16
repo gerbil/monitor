@@ -41,7 +41,11 @@ if (isset($_FILES['file'])) {
         $servers['hgdb2']['password'] = 'provdbpass042';
         $servers['hgdb2']['url'] = 'dbp-1.tele2.net/provvos7';
 
-        /* */
+        $servers['hgdb2']['user'] = 'provhgd02';
+        $servers['hgdb2']['password'] = 'provdbpass042';
+        $servers['hgdb2']['url'] = 'obelix.corp.tele2.com/PROVDB';
+
+        /*WHAEVER */
 
         foreach ($servers as $key => $value) {
 
