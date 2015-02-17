@@ -125,6 +125,22 @@ class alarmResults {
 				$this->password = "test";
 				$this->url = "hgd0-devdb-1.tele2.net/captest";
 				break;
+            case "kstb2":
+                $this->user = "provkst02";
+                $this->password = "e2uPxreNbchUO80J";
+                $this->url = "10.156.150.160/PROVDB";
+            case "kstb3":
+                $this->user = "provkst03";
+                $this->password =  "x7du8shQcMbFpmm1";
+                $this->url = "10.156.150.160/PROVDB";
+            case "provhgd02":
+                $this->user = "provhgd02";
+                $this->password = "fQVEQLPjy8InVexu";
+                $this->url = "10.156.150.160/PROVDB";
+            case "provhgd03":
+                $this->user = "provhgd03";
+                $this->password = "RFMkcPynUUktLGcv";
+                $this->url = "10.156.150.160/PROVDB";
 		}
 
 	}
