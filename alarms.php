@@ -151,7 +151,6 @@ Template Name: Alarms
         </div>
     </div>
 
-
     <div class="row-fluid">
         <div class="span6 ">
             <div class="box color_1_3 title_big fill">
