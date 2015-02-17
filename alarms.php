@@ -6,6 +6,7 @@ Template Name: Alarms
 
 <?php get_header(); ?>
 
+
     <!-- Js init -->
     <script src="<?php bloginfo('template_url'); ?>/js/alarms.js"></script>
 
