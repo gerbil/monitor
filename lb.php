@@ -12,7 +12,7 @@ Template Name: Lb
 	<div id="main_container">
       <div class="row-fluid">
         <div class="span12 ">
-        <div class="box color_color_dark title_big height_big" style="height:460px;padding:5px;">
+        <div class="box color_26 title_big height_big" style="height:780px;padding:5px;">
           <div class="title">
             <div class="row-fluid">
               <div class="span12">
@@ -80,7 +80,7 @@ Template Name: Lb
 							<h5 class="pull-left"><span>kstf1</span></h5>
 							<h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
 							  <div class="btn-toolbar pull-right ">
-								<div class="btn-group"><div id="kst1-other"></div></div>
+								<div class="btn-group"><div id="kst-prov-f1"></div></div>
 							  </div>
 						  <!-- End .row-fluid --> 
 						</div>              
@@ -93,12 +93,68 @@ Template Name: Lb
                                  <h5 class="pull-left"><span>hgdf1</span></h5>
                                  <h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
                                  <div class="btn-toolbar pull-right ">
-                                     <div class="btn-group"><div id="hgd1-other"></div></div>
+                                     <div class="btn-group"><div id="hgd-prov-f1"></div></div>
                                  </div>
                                  <!-- End .row-fluid -->
                              </div>
                          </div>
                      </div>
+                </div>
+
+                <div class="row-fluid fluid">
+                    <div class="span6">
+                        <div class=" box color_1_4 height_medium title_big ">
+                            <div class="title row-fluid">
+                                <h5 class="pull-left"><span>kstf2</span></h5>
+                                <h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
+                                <div class="btn-toolbar pull-right ">
+                                    <div class="btn-group"><div id="kst-prov-f2"></div></div>
+                                </div>
+                                <!-- End .row-fluid -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .box .span6-->
+                    <div class="span6">
+                        <div class=" box color_25 height_medium title_big">
+                            <div class="title row-fluid">
+                                <h5 class="pull-left"><span>kstf3</span></h5>
+                                <h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
+                                <div class="btn-toolbar pull-right ">
+                                    <div class="btn-group"><div id="kst-prov-f3"></div></div>
+                                </div>
+                                <!-- End .row-fluid -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-fluid fluid">
+                    <div class="span6">
+                        <div class=" box color_1_2 height_medium title_big ">
+                            <div class="title row-fluid">
+                                <h5 class="pull-left"><span>hgdf2</span></h5>
+                                <h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
+                                <div class="btn-toolbar pull-right ">
+                                    <div class="btn-group"><div id="hgd-prov-f2"></div></div>
+                                </div>
+                                <!-- End .row-fluid -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .box .span6-->
+                    <div class="span6">
+                        <div class=" box color_12 height_medium title_big">
+                            <div class="title row-fluid">
+                                <h5 class="pull-left"><span>hgdf3</span></h5>
+                                <h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
+                                <div class="btn-toolbar pull-right ">
+                                    <div class="btn-group"><div id="hgd-prov-f3"></div></div>
+                                </div>
+                                <!-- End .row-fluid -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
 				
                 </div>

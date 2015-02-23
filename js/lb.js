@@ -17,13 +17,19 @@ function getLBStatus(server) {
 
 //Refresh for index page
 function update() {
-	$('#avk6-provident-f1').html(getLBStatus('avk6-provident-f1'));
-	$('#hgd0-provident-f1').html(getLBStatus('hgd0-provident-f1'));	
-	$('#hgd0-provident-f2').html(getLBStatus('hgd0-provident-f2'));	
-	$('#kst1-other').html(getLBStatus('kst1-other'));
-	$('#hgd1-other').html(getLBStatus('hgd1-other'));
+	$('#avk6-provident-f1').html(getLBStatus('avk6-provident-f1.tele2.net'));
+	$('#hgd0-provident-f1').html(getLBStatus('hgd0-provident-f1.tele2.net'));
+    $('#hgd0-provident-f2').html(getLBStatus('hgd0-provident-f2.tele2.net'));
+
+	$('#kst-prov-f1').html(getLBStatus('kst-prov-f1'));
+	$('#hgd-prov-f1').html(getLBStatus('hgd-prov-f1'));
+
+    $('#kst-prov-f2').html(getLBStatus('kst-prov-f2'));
+    $('#kst-prov-f3').html(getLBStatus('kst-prov-f3'));
+    $('#hgd-prov-f2').html(getLBStatus('hgd-prov-f2'));
+    $('#hgd-prov-f3').html(getLBStatus('hgd-prov-f3'));
 	
-	$('#avk6-provident-f1 a, #hgd0-provident-f1 a , #hgd0-provident-f2 a, #kst1-other a, #hgd1-other a').attr('style', 'padding: 56px !important;');
+	$('#avk6-provident-f1 a, #hgd0-provident-f1 a , #hgd0-provident-f2 a, #kst-prov-f1 a, #hgd-prov-f1 a, #kst-prov-f2 a, #kst-prov-f3 a, #hgd-prov-f2 a, #hgd-prov-f3 a').attr('style', 'padding: 56px !important;');
 
 	setTimeout(update, updateInterval);
 }
@@ -48,7 +54,7 @@ $('a.lbRemove').live('click', (function () {
 			if (result == 'ok') {
 				$('#' + server).html(getLBStatus(server));
 				$('#main_container div.alert').remove();
-				$('#main_container').prepend('<div class="alert alert-success"><a class="close" data-dismiss="alert">×</a><strong>Success!</strong> LB status updated. Server will be restored/removed from LB within 5 min.</div>');
+				$('#main_container').prepend('<div class="alert alert-success"><a class="close" data-dismiss="alert">×</a><strong>Success!</strong> LB status updated.</div>');
 				$('#main_container div.alert').fadeOut(6000);
 			} else {
 				$('#main_container div.alert').remove();
@@ -81,7 +87,7 @@ $('a.lbRestore').live('click', (function () {
 			if (result == 'ok') {
 				$('#' + server).html(getLBStatus(server));
 				$('#main_container div.alert').remove();
-				$('#main_container').prepend('<div class="alert alert-success"><a class="close" data-dismiss="alert">×</a><strong>Success!</strong> LB status updated. Server will be restored/removed from LB within 5 mins.</div>');
+				$('#main_container').prepend('<div class="alert alert-success"><a class="close" data-dismiss="alert">×</a><strong>Success!</strong> LB status updated.</div>');
 				$('#main_container div.alert').fadeOut(6000);
 			} else {
 				$('#main_container div.alert').remove();
