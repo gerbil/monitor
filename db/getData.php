@@ -51,6 +51,11 @@ switch ($server) {
 		$password = "test";
 		$url = "hgd0-devdb-1.tele2.net/captest";
         break;
+    case "avosnew":
+        $user = "provfmob";
+        $password = "FJvA158CH3JL0hHw";
+        $url = "obelix.corp.tele2.com/PROVDB";
+        break;
 }
 
 

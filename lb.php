@@ -12,7 +12,7 @@ Template Name: Lb
 	<div id="main_container">
       <div class="row-fluid">
         <div class="span12 ">
-        <div class="box color_3 title_big height_big" style="height:460px;padding:5px;">
+        <div class="box color_color_dark title_big height_big" style="height:460px;padding:5px;">
           <div class="title">
             <div class="row-fluid">
               <div class="span12">
@@ -31,7 +31,7 @@ Template Name: Lb
 			
 				<div class="row-fluid fluid">
 					<div class="span6">
-					  <div class="box color_26 height_medium title_big">
+					  <div class="box color_20 height_medium title_big">
 						<div class="title row-fluid">
 							<h5 class="pull-left"><span>avk6</span></h5>
 							<h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
@@ -44,7 +44,7 @@ Template Name: Lb
 					</div>
 					<!-- End .span6 -->
 					<div class="span6">
-					  <div class="box color_25 height_medium title_big">
+					  <div class="box color_3 height_medium title_big">
 						<div class="title row-fluid">
 							<h5 class="pull-left"><span>hgd01</span></h5>
 							<h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
@@ -60,7 +60,7 @@ Template Name: Lb
 				  <!-- End .row-fluid -->
 				  <div class="row-fluid fluid">
 					<div class="span6">
-					  <div class=" box color_2 height_medium title_big">
+					  <div class=" box color_27 height_medium title_big">
 						<div class="title row-fluid">
 							<h5 class="pull-left"><span>hgd02</span></h5>
 							<h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
@@ -75,19 +75,7 @@ Template Name: Lb
 				
 				 <div class="row-fluid fluid">
 					<div class="span6">
-					  <div class=" box color_23_1 height_medium title_big">
-						<div class="title row-fluid">
-							<h5 class="pull-left"><span>hgdf1</span></h5>
-							<h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
-							  <div class="btn-toolbar pull-right ">
-								<div class="btn-group"><div id="hgd1-other"></div></div>
-							  </div>
-						  <!-- End .row-fluid --> 
-						</div>
-					  </div>
-					</div>
-					<div class="span6">
-					  <div class=" box color_22 height_medium title_big ">
+					  <div class=" box color_14 height_medium title_big ">
 						<div class="title row-fluid">
 							<h5 class="pull-left"><span>kstf1</span></h5>
 							<h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
@@ -96,10 +84,21 @@ Template Name: Lb
 							  </div>
 						  <!-- End .row-fluid --> 
 						</div>              
-				  </div>
-				</div>
-				<!-- End .box .span6-->
-        
+                      </div>
+				    </div>
+				    <!-- End .box .span6-->
+                     <div class="span6">
+                         <div class=" box color_1_1 height_medium title_big">
+                             <div class="title row-fluid">
+                                 <h5 class="pull-left"><span>hgdf1</span></h5>
+                                 <h5 class="pull-left" style="padding-top:45px;"><span>control</span></h5>
+                                 <div class="btn-toolbar pull-right ">
+                                     <div class="btn-group"><div id="hgd1-other"></div></div>
+                                 </div>
+                                 <!-- End .row-fluid -->
+                             </div>
+                         </div>
+                     </div>
                 </div>
 				
                 </div>

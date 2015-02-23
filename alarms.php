@@ -153,42 +153,7 @@ Template Name: Alarms
 
     <div class="row-fluid">
         <div class="span6 ">
-            <div class="box color_1_3 title_big fill">
-                <div class="title">
-                    <div class="row-fluid">
-                        <div class="span12">
-                            <h4><span>TEST</span></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="row-fluid">
-                        <div id="test"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="span6 ">
-            <div class="box color_0 title_big fill">
-                <div class="title">
-                    <div class="row-fluid">
-                        <div class="span12">
-                            <h4><span>ACTIVEVOS TEST</span></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="row-fluid">
-                        <div id="avostest"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row-fluid">
-        <div class="span6 ">
-            <div class="box color_25 title_big fill">
+            <div class="box color_1_4 title_big fill">
                 <div class="title">
                     <div class="row-fluid">
                         <div class="span12">
@@ -204,7 +169,7 @@ Template Name: Alarms
             </div>
         </div>
         <div class="span6 ">
-            <div class="box color_15 title_big fill">
+            <div class="box color_25 title_big fill">
                 <div class="title">
                     <div class="row-fluid">
                         <div class="span12">
@@ -227,7 +192,7 @@ Template Name: Alarms
                 <div class="title">
                     <div class="row-fluid">
                         <div class="span12">
-                            <h4><span>PROVHGD2</span></h4>
+                            <h4><span>HGDB2</span></h4>
                         </div>
                     </div>
                 </div>
@@ -239,11 +204,11 @@ Template Name: Alarms
             </div>
         </div>
         <div class="span6 ">
-            <div class="box color_13 title_big fill">
+            <div class="box color_12 title_big fill">
                 <div class="title">
                     <div class="row-fluid">
                         <div class="span12">
-                            <h4><span>PROVHGD3</span></h4>
+                            <h4><span>HGDB3</span></h4>
                         </div>
                     </div>
                 </div>
@@ -255,6 +220,61 @@ Template Name: Alarms
             </div>
         </div>
     </div>
+
+        <div class="row-fluid">
+            <div class="span6 ">
+                <div class="box color_26 title_big fill">
+                    <div class="title">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h4><span>ActiveVOSnew</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row-fluid">
+                            <div id="avosnew"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span6 ">
+                <div class="box color_1_3 title_big fill">
+                    <div class="title">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h4><span>TEST</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row-fluid">
+                            <div id="test"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span6 ">
+                <div class="box color_0 title_big fill">
+                    <div class="title">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h4><span>ACTIVEVOS TEST</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row-fluid">
+                            <div id="avostest"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 

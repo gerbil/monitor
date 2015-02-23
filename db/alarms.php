@@ -129,19 +129,29 @@ class alarmResults {
                 $this->user = "provkst02";
                 $this->password = "e2uPxreNbchUO80J";
                 $this->url = "10.156.150.160/PROVDB";
+                break;
             case "kstb3":
                 $this->user = "provkst03";
                 $this->password =  "x7du8shQcMbFpmm1";
                 $this->url = "10.156.150.160/PROVDB";
+                break;
             case "provhgd02":
                 $this->user = "provhgd02";
                 $this->password = "fQVEQLPjy8InVexu";
                 $this->url = "10.156.150.160/PROVDB";
+                break;
             case "provhgd03":
                 $this->user = "provhgd03";
                 $this->password = "RFMkcPynUUktLGcv";
                 $this->url = "10.156.150.160/PROVDB";
+                break;
+            case "avosnew":
+                $this->user = "provfmob";
+                $this->password = "FJvA158CH3JL0hHw";
+                $this->url = "obelix.corp.tele2.com/PROVDB";
+                break;
 		}
+
 
 	}
 	

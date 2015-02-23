@@ -9733,21 +9733,24 @@ html.sidebar_hover #main {
 }
 
 .color_1_1 {
-    background-color: #FFFF00 !important;
+    background-color: #FFC107 !important;
 }
 
 .color_1_2 {
-    background-color: #76FF03 !important;
+    background-color: #8BC34A !important;
 }
 
 .color_1_3 {
     background-color: #9E9E9E !important;
 }
 
+.color_1_4 {
+    background-color: #ef5350 !important;
+}
+
 .color_2 {
     background-color: #78ba00 !important;
 }
-
 
 .color_3 {
     background-color: #2572eb !important;
@@ -9794,7 +9797,7 @@ html.sidebar_hover #main {
 }
 
 .color_14 {
-    background-color: #fe971c !important;
+    background-color: #FF9800 !important;
 }
 
 .color_15 {
@@ -9802,11 +9805,11 @@ html.sidebar_hover #main {
 }
 
 .color_16 {
-    background-color: #ff1d77 !important;
+    background-color: #EC407A !important;
 }
 
 .color_17 {
-    background-color: #a93ffe !important;
+    background-color: #9C27B0 !important;
 }
 
 .color_18 {
@@ -9818,7 +9821,7 @@ html.sidebar_hover #main {
 }
 
 .color_20 {
-    background-color: #00d8cc !important;
+    background-color: #4FC3F7 !important;
 }
 
 .color_21 {
@@ -9842,7 +9845,7 @@ html.sidebar_hover #main {
 }
 
 .color_25 {
-    background-color: #d74f2a !important;
+    background-color: #c62828 !important;
 }
 
 .color_26 {
@@ -9850,7 +9853,7 @@ html.sidebar_hover #main {
 }
 
 .color_27 {
-    background-color: #1b58b8 !important;
+    background-color: #303F9F !important;
 }
 
 .color_light {
