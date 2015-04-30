@@ -225,6 +225,7 @@ $(function() {
         $('#provhgd02').html(getAlarms('provhgd02'));
         $('#provhgd03').html(getAlarms('provhgd03'));
         $('#avosnew').html(getAlarms('avosnew'));
+        $('#kstb1test').html(getAlarms('kstb1test'));
 
         if ($('table.alarms tr').hasClass('ALARM')) {
             changer();

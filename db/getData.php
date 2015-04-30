@@ -56,6 +56,11 @@ switch ($server) {
         $password = "FJvA158CH3JL0hHw";
         $url = "obelix.corp.tele2.com/PROVDB";
         break;
+    case "kstb1test":
+        $user = "provtest";
+        $password = "test";
+        $url = "hawk.corp.tele2.com/provtest";
+        break;
 }
 
 

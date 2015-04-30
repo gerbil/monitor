@@ -150,6 +150,11 @@ class alarmResults {
                 $this->password = "FJvA158CH3JL0hHw";
                 $this->url = "obelix.corp.tele2.com/PROVDB";
                 break;
+            case "kstb1test":
+                $this->user = "provtest";
+                $this->password = "test";
+                $this->url = "hawk.corp.tele2.com/provtest";
+                break;
 		}
 
 

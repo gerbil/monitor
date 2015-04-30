@@ -238,6 +238,22 @@ Template Name: Alarms
                     </div>
                 </div>
             </div>
+            <div class="span6 ">
+                <div class="box color_5 title_big fill">
+                    <div class="title">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h4><span>KST TEST</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row-fluid">
+                            <div id="kstb1test"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="row-fluid">
