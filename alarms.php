@@ -243,7 +243,7 @@ Template Name: Alarms
                     <div class="title">
                         <div class="row-fluid">
                             <div class="span12">
-                                <h4><span>KST TEST</span></h4>
+                                <h4><span>TEST</span></h4>
                             </div>
                         </div>
                     </div>
