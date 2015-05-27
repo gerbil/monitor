@@ -32,11 +32,12 @@ for (var test in tests) {
                 data: {"jobName": jobName},
                 success: function (results) {
                     $('div#' + divId + ' div.logs').html(results);
+                    $('div#' + divId + ' div.logs').animate({scrollTop: 99999999}, 10);
                 }
             });
         }
 
-        setInterval(getLogs, 10000);
+        setInterval(getLogs, 1000);
         getLogs();
 
         function getJob() {
@@ -50,7 +51,7 @@ for (var test in tests) {
             });
         }
 
-        setInterval(getJob, 5000);
+        setInterval(getJob, 15000);
         getJob();
 
         function getJobsList() {
@@ -64,7 +65,7 @@ for (var test in tests) {
             });
         }
 
-        setInterval(getJobsList, 5000);
+        setInterval(getJobsList, 25000);
         getJobsList();
 
     };

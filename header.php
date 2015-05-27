@@ -6,7 +6,7 @@
 <title><?php bloginfo('name') ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="author" content="">
+<meta name="author" content="Jurijs Kobecs">
 <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/css/images/favicon.png">
 <!-- Le styles -->
 <link href="<?php bloginfo('template_url'); ?>/css/twitter/bootstrap.css" rel="stylesheet">
