@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="DEV" promptOnLocalOverwrite="false" uploadOnCheckin="b2f90699-67c1-4d1e-976a-4f3dd032aafc">
-    <option name="myUploadOnCheckinName" value="DEV" />
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="DEV" promptOnLocalOverwrite="false">
     <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>

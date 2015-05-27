@@ -32,7 +32,7 @@ for ($i = 0; $i <= $size; $i++) {
 
     if ($status == 'inProgress') {
         echo '<div class="span2">
-                 <div class="box ' . $color . ' height_small title_big">
+                 <div class="box ' . $color . ' ' . $status . ' height_small title_big">
                     <div class="btn-toolbar pull-right" ><div class="btn-group"><a href="" class="btn stop" title="Stop this build" name="'.$job->getName().'" style="padding: 4px !important; background: transparent;"><img src="wp-content/themes/monitor/img/lbremove.png"></a></div></div>
                     <div style="width: '.$currentBuildProgress. '%; height: 100%; background: #8fcf01;">
                         <div class="title">
@@ -43,7 +43,7 @@ for ($i = 0; $i <= $size; $i++) {
               </div>';
     } else {
         echo '<div class="span2">
-                <div class="box ' . $color . ' height_small title_big">
+                <div class="box ' . $color . ' ' . $status . ' height_small title_big">
                    <div class="title">
                      <h5 style="padding: 7px 0 5px 35px"><a class="center" href="' . $currentBuildUrl . '"> ' . $currentBuildNumber . '</a></h5>
                    </div>

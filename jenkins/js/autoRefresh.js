@@ -32,7 +32,9 @@ for (var test in tests) {
                 data: {"jobName": jobName},
                 success: function (results) {
                     $('div#' + divId + ' div.logs').html(results);
-                    $('div#' + divId + ' div.logs').animate({scrollTop: 99999999}, 10);
+                    if ($('div#' + divId + ' > div.row-fluid.fluid > div.jobsList > div:nth-child(1) > div.inProgress').length) {
+                        $('div#' + divId + ' div.logs').animate({scrollTop: 99999999}, 10);
+                    }
                 }
             });
         }
@@ -51,7 +53,7 @@ for (var test in tests) {
             });
         }
 
-        setInterval(getJob, 15000);
+        setInterval(getJob, 25000);
         getJob();
 
         function getJobsList() {
@@ -65,7 +67,7 @@ for (var test in tests) {
             });
         }
 
-        setInterval(getJobsList, 25000);
+        setInterval(getJobsList, 3000);
         getJobsList();
 
     };
