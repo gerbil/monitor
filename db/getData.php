@@ -46,8 +46,8 @@ switch ($server) {
 		$password = "test";
 		$url = "hgd0-devdb-1.tele2.net/captest";
         break;
-	case "vostest":
-        $user = "vostest";
+	case "avostest":
+        $user = "avostest";
 		$password = "test";
 		$url = "hgd0-devdb-1.tele2.net/captest";
         break;
