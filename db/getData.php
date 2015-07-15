@@ -46,10 +46,10 @@ switch ($server) {
 		$password = "test";
 		$url = "hgd0-devdb-1.tele2.net/captest";
         break;
-	case "avostest":
-        $user = "avostest";
+	case "vostest":
+        $user = "vostest";
 		$password = "test";
-		$url = "hgd0-devdb-1.tele2.net/captest";
+		$url = "hawk.corp.tele2.com/provtest";
         break;
     case "avosnew":
         $user = "provfmob";

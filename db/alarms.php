@@ -120,10 +120,10 @@ class alarmResults {
 				$this->password = "test";
 				$this->url = "hgd0-devdb-1.tele2.net/captest";
 				break;
-			case "avostest":
+			case "vostest":
 				$this->user = "vostest";
 				$this->password = "test";
-				$this->url = "hgd0-devdb-1.tele2.net/captest";
+				$this->url = "hawk.corp.tele2.com/provtest";
 				break;
             case "kstb2":
                 $this->user = "provkst02";

@@ -219,7 +219,7 @@ $(function() {
 		$('#f-other').html(getAlarms('f-other'));
 		$('#f-mobile').html(getAlarms('f-mobile'));
         $('#test').html(getAlarms('test'));
-		$('#avostest').html(getAlarms('avostest'));
+		$('#vostest').html(getAlarms('vostest'));
         $('#kstb2').html(getAlarms('kstb2'));
         $('#kstb3').html(getAlarms('kstb3'));
         $('#provhgd02').html(getAlarms('provhgd02'));

@@ -193,13 +193,13 @@ Template Name: Alarms
                     <div class="title">
                         <div class="row-fluid">
                             <div class="span12">
-                                <h4><span>ACTIVEVOS TEST</span></h4>
+                                <h4><span>ACTIVEVOS KST TEST</span></h4>
                             </div>
                         </div>
                     </div>
                     <div class="content">
                         <div class="row-fluid">
-                            <div id="avostest"></div>
+                            <div id="vostest"></div>
                         </div>
                     </div>
                 </div>
